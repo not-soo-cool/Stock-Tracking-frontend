@@ -54,7 +54,7 @@ const MarblesList = () => {
 
   const fetchMarbles = async (value) => {
     try {
-      const { data } = await axios.post(`http://localhost:5005/api/v1/marbles/search`, {value}, {
+      const { data } = await axios.post(`https://stock-tracking-39mj.onrender.com/api/v1/marbles/search`, {value}, {
         withCredentials: true,
       }, {
         headers: {

@@ -54,7 +54,7 @@ const TilesList = () => {
 
   const fetchTiles = async (value) => {
     try {
-      const { data } = await axios.post(`http://localhost:5005/api/v1/tiles/search`, {value}, {
+      const { data } = await axios.post(`https://stock-tracking-39mj.onrender.com/api/v1/tiles/search`, {value}, {
         withCredentials: true,
       }, {
         headers: {

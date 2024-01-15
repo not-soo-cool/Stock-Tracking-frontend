@@ -42,7 +42,7 @@ const Order = () => {
 
     const checkTiles = async (title, size, ind) => {
       try {
-        const { data } = await axios.post("http://localhost:5005/api/v1/tiles/check", {title, size}, {
+        const { data } = await axios.post("https://stock-tracking-39mj.onrender.com/api/v1/tiles/check", {title, size}, {
           withCredentials: true
         }, {
           headers: {
@@ -69,7 +69,7 @@ const Order = () => {
 
     const checkMarbles = async (title, size, ind) => {
       try {
-        const { data } = await axios.post("http://localhost:5005/api/v1/marbles/check", {title, size}, {
+        const { data } = await axios.post("https://stock-tracking-39mj.onrender.com/api/v1/marbles/check", {title, size}, {
           withCredentials: true
         }, {
           headers: {
@@ -96,7 +96,7 @@ const Order = () => {
 
     const fetchTiles = async (value, ind) => {
       try {
-        const { data } = await axios.post("http://localhost:5005/api/v1/tiles/search", {value}, {
+        const { data } = await axios.post("https://stock-tracking-39mj.onrender.com/api/v1/tiles/search", {value}, {
           withCredentials: true
         }, {
           headers: {
@@ -133,7 +133,7 @@ const Order = () => {
 
     const fetchMarbles = async (value, ind) => {
       try {
-        const { data } = await axios.post("http://localhost:5005/api/v1/marbles/search", {value}, {
+        const { data } = await axios.post("https://stock-tracking-39mj.onrender.com/api/v1/marbles/search", {value}, {
           withCredentials: true
         }, {
           headers: {

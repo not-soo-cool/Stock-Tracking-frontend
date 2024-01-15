@@ -54,7 +54,7 @@ const OrdersList = () => {
 
   const fetchOrders = async (date) => {
     try {
-      const { data } = await axios.post(`http://localhost:5005/api/v1/date/orders`, {date}, {
+      const { data } = await axios.post(`https://stock-tracking-39mj.onrender.com/api/v1/date/orders`, {date}, {
         withCredentials: true,
       }, {
         headers: {
