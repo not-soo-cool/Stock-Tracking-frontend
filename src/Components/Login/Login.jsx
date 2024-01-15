@@ -28,10 +28,10 @@ const Login = () => {
         e.preventDefault();
 
         dispatch(loginUser(email, password));
-        // if(window.location.pathname.toString() === '/login'){
-        //   // setHref(true);
-        //   window.location.pathname = '/';
-        // }
+        if(window.location.pathname.toString() === '/login'){
+          // setHref(true);
+          window.location.pathname = '/';
+        }
     }
 
     useEffect(() => {
@@ -45,9 +45,9 @@ const Login = () => {
         }
       }, [alert, error, message, dispatch]);
 
-      if(window.location.pathname.toString() === '/login' && isAuthenticated){
-        window.location.pathname = '/';
-      }
+      // if(window.location.pathname.toString() === '/login' && isAuthenticated){
+      //   window.location.pathname = '/';
+      // }
 
 
   return (

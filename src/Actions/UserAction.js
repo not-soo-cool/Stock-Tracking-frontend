@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const serverUrl = "http://localhost:5005/api/v1"
+const serverUrl = "https://stock-tracking-39mj.onrender.com/api/v1"
 
 export const loginUser = (email, password) => async(dispatch) => {
     try {
